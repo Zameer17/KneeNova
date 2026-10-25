@@ -172,6 +172,8 @@ npm run dev
 ```
 * **Web Application**: [http://localhost:5173](http://localhost:5173)
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" />
+
 ---
 
 ## 🌐 Connect with Me
@@ -187,9 +189,6 @@ npm run dev
 
 <br/>
 
-<!-- 🌊 ANIMATED FOOTER BANNER -->
-<a href="https://github.com/Zameer17/KneeNova">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:10b981,25:14b8a6,50:0284c7,75:1769aa,100:091428&height=120&section=footer&animation=fadeIn" width="100%" alt="KneeNova Footer" />
-</a>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:10b981,25:14b8a6,50:0284c7,75:1769aa,100:091428&height=120&section=footer&animation=fadeIn" />
 
 </div>
