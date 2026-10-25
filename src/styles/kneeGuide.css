@@ -1,0 +1,1865 @@
+/* =========================================
+   KNEE GUIDE
+========================================= */
+
+.knee-guide-page {
+  min-height: 100vh;
+  background: #f7fafc;
+  color: #183042;
+}
+
+.guide-container {
+  width: min(
+    1180px,
+    calc(100% - 70px)
+  );
+
+  margin: 0 auto;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.guide-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e2ebef;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.guide-header-inner {
+  min-height: 76px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.guide-brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  text-align: left;
+}
+
+.guide-brand img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.guide-brand div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.guide-brand strong {
+  font-size: 16px;
+  font-weight: 650;
+  color: #183042;
+}
+
+.guide-brand span {
+  font-size: 9px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  color: #8a9aa3;
+}
+
+.guide-back {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  border: none;
+  background: transparent;
+
+  color: #1769aa;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.guide-hero {
+  padding: 95px 0 85px;
+
+  background:
+    radial-gradient(
+      circle at 88% 20%,
+      rgba(23, 105, 170, 0.06),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #ffffff,
+      #eff8fa
+    );
+}
+
+.guide-hero-copy {
+  max-width: 760px;
+}
+
+.guide-label {
+  display: block;
+
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #2a8d72;
+}
+
+.guide-hero-copy h1 {
+  margin-top: 15px;
+
+  font-size: clamp(
+    44px,
+    5.1vw,
+    68px
+  );
+
+  line-height: 1.05;
+
+  letter-spacing: -2.8px;
+
+  font-weight: 600;
+
+  color: #163b52;
+}
+
+.guide-hero-copy h1 span {
+  color: #1769aa;
+}
+
+.guide-hero-copy p {
+  max-width: 630px;
+
+  margin-top: 24px;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+
+  color: #738792;
+}
+
+/* =========================================
+   EXPLORER
+========================================= */
+
+.guide-explorer {
+  padding: 75px 0;
+
+  background: #ffffff;
+}
+
+.explorer-grid {
+  display: grid;
+
+  grid-template-columns:
+    1.15fr 0.85fr;
+
+  gap: 20px;
+}
+
+/* =========================================
+   ANATOMY CARD
+========================================= */
+
+.anatomy-card,
+.finding-detail-card {
+  border: 1px solid #dce7eb;
+
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 14px 35px
+    rgba(28, 67, 84, 0.05);
+}
+
+.anatomy-card {
+  overflow: hidden;
+}
+
+.anatomy-card-header {
+  min-height: 70px;
+
+  padding: 0 22px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  border-bottom: 1px solid #e8eef1;
+}
+
+.anatomy-card-header > div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.anatomy-card-header span {
+  font-size: 8px;
+
+  letter-spacing: 1.5px;
+
+  font-weight: 700;
+
+  color: #9baab0;
+}
+
+.anatomy-card-header strong {
+  font-size: 14px;
+
+  font-weight: 650;
+
+  color: #365666;
+}
+
+.anatomy-card-header svg {
+  color: #1769aa;
+}
+
+/* =========================================
+   ANATOMICAL ILLUSTRATION
+========================================= */
+
+.knee-illustration {
+  position: relative;
+
+  min-height: 520px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at center,
+      #fafdfe 0%,
+      #eff7f9 100%
+    );
+}
+
+/* Femur */
+
+.femur {
+  position: absolute;
+
+  left: 50%;
+
+  top: 55px;
+
+  width: 180px;
+
+  height: 195px;
+
+  transform:
+    translateX(-50%);
+
+  border-radius:
+    45px 45px 30px 30px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #d2e0e4,
+      #f8fbfc,
+      #c8d8dd
+    );
+
+  box-shadow:
+    inset 18px 0 25px
+    rgba(89, 111, 122, 0.08);
+}
+
+.femur-left,
+.femur-right {
+  position: absolute;
+
+  bottom: -25px;
+
+  width: 66px;
+  height: 82px;
+
+  border-radius: 40px;
+
+  background: #d4e1e5;
+}
+
+.femur-left {
+  left: 3px;
+}
+
+.femur-right {
+  right: 3px;
+}
+
+.femur-center {
+  position: absolute;
+
+  top: 28px;
+  left: 50%;
+
+  width: 72px;
+  height: 105px;
+
+  transform:
+    translateX(-50%);
+
+  border-radius: 50%;
+
+  background: #edf4f6;
+}
+
+/* Patella */
+
+.patella {
+  position: absolute;
+
+  top: 210px;
+  left: 50%;
+
+  width: 80px;
+  height: 75px;
+
+  transform:
+    translateX(-50%);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius:
+    50% 50% 47% 47%;
+
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      #ffffff,
+      #d5e2e6
+    );
+
+  color: transparent;
+
+  box-shadow:
+    0 8px 20px
+    rgba(44, 77, 89, 0.09);
+
+  z-index: 5;
+}
+
+/* Joint */
+
+.joint-space {
+  position: absolute;
+
+  top: 265px;
+
+  left: 50%;
+
+  width: 210px;
+  height: 28px;
+
+  transform:
+    translateX(-50%);
+
+  border-radius: 50%;
+
+  background:
+    #8db8b4;
+
+  opacity: 0.26;
+
+  z-index: 3;
+}
+
+/* Tibia */
+
+.tibia {
+  position: absolute;
+
+  left: 50%;
+
+  top: 286px;
+
+  width: 225px;
+
+  height: 195px;
+
+  transform:
+    translateX(-50%);
+
+  border-radius:
+    33px 33px 26px 26px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #c9d9de,
+      #f5fafb,
+      #c6d6da
+    );
+
+  z-index: 2;
+}
+
+.tibia-left,
+.tibia-right {
+  position: absolute;
+
+  top: -12px;
+
+  width: 92px;
+  height: 54px;
+
+  border-radius: 45px;
+
+  background: #d2e0e4;
+}
+
+.tibia-left {
+  left: 0;
+}
+
+.tibia-right {
+  right: 0;
+}
+
+.tibia-center {
+  position: absolute;
+
+  left: 50%;
+
+  top: 24px;
+
+  width: 75px;
+  height: 155px;
+
+  transform:
+    translateX(-50%);
+
+  border-radius: 40px;
+
+  background: #eaf2f4;
+}
+
+/* Menisci */
+
+.meniscus {
+  position: absolute;
+
+  top: 273px;
+
+  width: 85px;
+  height: 22px;
+
+  border-radius: 50%;
+
+  border: 7px solid #6c9f98;
+
+  opacity: 0.75;
+
+  z-index: 6;
+}
+
+.meniscus-left {
+  left: calc(50% - 105px);
+
+  transform: rotate(-8deg);
+}
+
+.meniscus-right {
+  right: calc(50% - 105px);
+
+  transform: rotate(8deg);
+}
+
+/* ACL */
+
+.acl-line {
+  position: absolute;
+
+  top: 222px;
+
+  left: 50%;
+
+  width: 5px;
+  height: 92px;
+
+  transform:
+    translateX(-50%)
+    rotate(15deg);
+
+  border-radius: 10px;
+
+  background: #1769aa;
+
+  opacity: 0.72;
+
+  z-index: 7;
+}
+
+/* MCL */
+
+.mcl-line {
+  position: absolute;
+
+  top: 205px;
+
+  left: calc(50% - 120px);
+
+  width: 7px;
+  height: 160px;
+
+  border-radius: 10px;
+
+  background: #2a9d7f;
+
+  opacity: 0.63;
+
+  transform: rotate(8deg);
+
+  z-index: 7;
+}
+
+/* LCL */
+
+.lcl-line {
+  position: absolute;
+
+  top: 205px;
+
+  right: calc(50% - 120px);
+
+  width: 7px;
+  height: 160px;
+
+  border-radius: 10px;
+
+  background: #c6a15b;
+
+  opacity: 0.62;
+
+  transform: rotate(-8deg);
+
+  z-index: 7;
+}
+
+/* Labels */
+
+.anatomy-label {
+  position: absolute;
+
+  padding: 7px 10px;
+
+  border-radius: 7px;
+
+  background: #ffffff;
+
+  border: 1px solid #dbe7eb;
+
+  box-shadow:
+    0 6px 18px
+    rgba(28, 67, 84, 0.08);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.7px;
+
+  z-index: 20;
+}
+
+.label-acl {
+  top: 220px;
+  left: 30px;
+
+  color: #1769aa;
+}
+
+.label-mcl {
+  top: 170px;
+  left: 35px;
+
+  color: #2a8d72;
+}
+
+.label-meniscus {
+  top: 310px;
+  right: 25px;
+
+  color: #537f7a;
+}
+
+/* Caption */
+
+.anatomy-caption {
+  min-height: 48px;
+
+  padding: 0 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  border-top: 1px solid #e7eef1;
+
+  color: #8a9ba3;
+
+  font-size: 9px;
+}
+
+.anatomy-caption svg {
+  color: #1769aa;
+}
+
+/* =========================================
+   DETAIL CARD
+========================================= */
+
+.finding-detail-card {
+  padding: 29px;
+
+  min-height: 638px;
+}
+
+.selected-group {
+  width: fit-content;
+
+  margin-top: 24px;
+
+  padding: 6px 9px;
+
+  border-radius: 100px;
+
+  background: #edf7f5;
+
+  color: #2a8d72;
+
+  font-size: 9px;
+
+  font-weight: 600;
+}
+
+.finding-detail-card h2 {
+  margin-top: 16px;
+
+  font-size: 34px;
+
+  letter-spacing: -1px;
+
+  font-weight: 600;
+
+  color: #24495c;
+}
+
+.detail-location {
+  margin-top: 22px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+.detail-location span,
+.detail-block > span {
+  font-size: 8px;
+
+  letter-spacing: 1.5px;
+
+  font-weight: 700;
+
+  color: #a0afb5;
+}
+
+.detail-location strong {
+  font-size: 12px;
+
+  color: #56717d;
+}
+
+.detail-divider {
+  height: 1px;
+
+  margin: 25px 0;
+
+  background: #e7eef1;
+}
+
+.detail-block {
+  margin-top: 22px;
+}
+
+.detail-block p {
+  margin-top: 8px;
+
+  font-size: 12px;
+
+  line-height: 1.8;
+
+  color: #778b95;
+}
+
+.detail-note {
+  margin-top: 28px;
+
+  padding: 13px;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 8px;
+
+  border-radius: 8px;
+
+  background: #f2f8fa;
+
+  color: #81929a;
+
+  font-size: 9px;
+
+  line-height: 1.6;
+}
+
+.detail-note svg {
+  flex-shrink: 0;
+
+  color: #2a9d7f;
+}
+
+/* =========================================
+   LIBRARY
+========================================= */
+
+.findings-library {
+  padding: 100px 0;
+
+  background: #f6fafc;
+}
+
+.library-heading {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+.library-heading h2 {
+  margin-top: 10px;
+
+  font-size: 36px;
+
+  letter-spacing: -1.5px;
+
+  color: #193f56;
+}
+
+.library-heading p {
+  margin-top: 10px;
+
+  max-width: 570px;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+
+  color: #80929b;
+}
+
+.finding-count {
+  font-size: 10px;
+
+  color: #8fa0a7;
+}
+
+/* Filters */
+
+.group-filters {
+  margin-top: 34px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+.group-filters button {
+  padding: 8px 12px;
+
+  border: 1px solid #dce7eb;
+
+  border-radius: 100px;
+
+  background: #ffffff;
+
+  color: #6d818b;
+
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+.group-filters button.active {
+  border-color: #a8cbd5;
+
+  background: #edf7fa;
+
+  color: #1769aa;
+
+  font-weight: 600;
+}
+
+/* Cards */
+
+.finding-library-grid {
+  margin-top: 22px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 12px;
+}
+
+.guide-finding-card {
+  position: relative;
+
+  min-height: 128px;
+
+  padding: 19px;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 14px;
+
+  border: 1px solid #dde8ec;
+
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.guide-finding-card:hover {
+  transform: translateY(-2px);
+
+  border-color: #c4d9e1;
+
+  box-shadow:
+    0 10px 25px
+    rgba(30, 68, 83, 0.05);
+}
+
+.guide-finding-card.selected {
+  border-color: #9ec7d4;
+
+  background: #f5fafc;
+}
+
+.guide-card-number {
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  color: #a2b0b6;
+}
+
+.guide-card-content {
+  flex: 1;
+}
+
+.guide-card-content > span {
+  font-size: 8px;
+
+  color: #2a8d72;
+
+  font-weight: 600;
+}
+
+.guide-card-content h3 {
+  margin-top: 7px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #365667;
+}
+
+.guide-card-content p {
+  margin-top: 6px;
+
+  font-size: 9px;
+
+  color: #8a9aa2;
+}
+
+.guide-card-arrow {
+  margin-top: 22px;
+
+  color: #a2b0b6;
+}
+
+/* =========================================
+   NOTE
+========================================= */
+
+.guide-note-section {
+  padding: 70px 0;
+
+  background: #ffffff;
+}
+
+.guide-note {
+  padding: 23px;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 15px;
+
+  border: 1px solid #dce7eb;
+
+  border-radius: 12px;
+
+  background: #f8fbfc;
+}
+
+.guide-note-icon {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 9px;
+
+  background: #edf6fa;
+
+  color: #1769aa;
+}
+
+.guide-note span {
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  color: #9aaab0;
+}
+
+.guide-note p {
+  max-width: 850px;
+
+  margin-top: 6px;
+
+  font-size: 10px;
+
+  line-height: 1.7;
+
+  color: #7d9099;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.guide-footer {
+  background: #153a51;
+
+  color: #a9bdc7;
+}
+
+.guide-footer-inner {
+  min-height: 76px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  font-size: 9px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .guide-container {
+    width: min(
+      100% - 40px,
+      760px
+    );
+  }
+
+  .explorer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .finding-library-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 620px) {
+
+  .guide-container {
+    width: calc(100% - 30px);
+  }
+
+  .guide-hero {
+    padding: 65px 0;
+  }
+
+  .guide-hero-copy h1 {
+    font-size: 40px;
+  }
+
+  .knee-illustration {
+    min-height: 430px;
+  }
+
+  .finding-library-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .library-heading {
+    display: block;
+  }
+
+  .finding-count {
+    display: block;
+
+    margin-top: 15px;
+  }
+
+  .guide-note {
+    flex-direction: column;
+  }
+
+  .guide-footer-inner {
+    min-height: 95px;
+
+    align-items: flex-start;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 7px;
+  }
+
+}
+/* =========================================
+   INTERACTIVE KNEE
+========================================= */
+
+.interactive-knee {
+  position: relative;
+
+  min-height: 620px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 43%,
+      #ffffff 0%,
+      #f4fafb 58%,
+      #eaf5f7 100%
+    );
+}
+
+.anatomy-grid-bg {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(23, 105, 170, 0.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(23, 105, 170, 0.025) 1px,
+      transparent 1px
+    );
+
+  background-size: 32px 32px;
+
+  mask-image:
+    radial-gradient(
+      circle at center,
+      black,
+      transparent 75%
+    );
+}
+
+.knee-svg {
+  position: absolute;
+
+  left: 50%;
+  top: 8px;
+
+  width: min(
+    470px,
+    82%
+  );
+
+  height: 585px;
+
+  transform:
+    translateX(-50%);
+
+  overflow: visible;
+}
+
+/* =========================================
+   BONES
+========================================= */
+
+.knee-svg .bone {
+  fill: #dce7ea;
+
+  stroke: #9fb3ba;
+
+  stroke-width: 2;
+}
+
+.knee-svg .bone-femur {
+  fill:
+    linear-gradient(
+      90deg,
+      #d4e2e5,
+      #ffffff
+    );
+}
+
+.knee-svg .bone-condyle {
+  fill: #e9f1f3;
+
+  stroke: #a8b9bf;
+
+  stroke-width: 2;
+}
+
+/* =========================================
+   PATELLA
+========================================= */
+
+.knee-svg .patella {
+  fill: #f1f6f7;
+
+  stroke: #a9bac0;
+
+  stroke-width: 2;
+
+  cursor: pointer;
+
+  transition:
+    fill 0.2s ease,
+    stroke 0.2s ease,
+    filter 0.2s ease;
+}
+
+.knee-svg .patella:hover,
+.knee-svg .patella.active {
+  fill: #dceff5;
+
+  stroke: #1769aa;
+
+  filter:
+    drop-shadow(
+      0 0 7px
+      rgba(23, 105, 170, 0.23)
+    );
+}
+
+/* =========================================
+   JOINT
+========================================= */
+
+.joint-space-svg {
+  fill: rgba(
+    42,
+    157,
+    127,
+    0.09
+  );
+
+  stroke: rgba(
+    42,
+    157,
+    127,
+    0.28
+  );
+
+  stroke-width: 2;
+
+  cursor: pointer;
+}
+
+.joint-space-svg.active {
+  fill: rgba(
+    42,
+    157,
+    127,
+    0.2
+  );
+
+  stroke: #2a9d7f;
+}
+
+/* =========================================
+   MENISCI
+========================================= */
+
+.meniscus-svg {
+  fill: #79a8a0;
+
+  opacity: 0.82;
+
+  cursor: pointer;
+
+  transition:
+    fill 0.2s ease,
+    filter 0.2s ease;
+}
+
+.meniscus-svg:hover,
+.meniscus-svg.active {
+  fill: #2a9d7f;
+
+  filter:
+    drop-shadow(
+      0 0 6px
+      rgba(42, 157, 127, 0.25)
+    );
+}
+
+/* =========================================
+   LIGAMENTS
+========================================= */
+
+.ligament-svg {
+  fill: none;
+
+  stroke-linecap: round;
+
+  stroke-linejoin: round;
+}
+
+.ligament-svg.acl {
+  stroke: #1769aa;
+
+  stroke-width: 10;
+
+  cursor: pointer;
+
+  transition:
+    stroke 0.2s ease,
+    filter 0.2s ease;
+}
+
+.ligament-svg.acl:hover,
+.ligament-svg.acl.active {
+  stroke: #0e568f;
+
+  filter:
+    drop-shadow(
+      0 0 6px
+      rgba(23, 105, 170, 0.28)
+    );
+}
+
+.ligament-svg.pcl {
+  stroke: #8ca6af;
+
+  stroke-width: 8;
+
+  opacity: 0.6;
+}
+
+.ligament-svg.mcl {
+  stroke: #2a9d7f;
+
+  stroke-width: 11;
+
+  cursor: pointer;
+
+  transition:
+    stroke 0.2s ease,
+    filter 0.2s ease;
+}
+
+.ligament-svg.mcl:hover,
+.ligament-svg.mcl.active {
+  stroke: #218469;
+
+  filter:
+    drop-shadow(
+      0 0 6px
+      rgba(42, 157, 127, 0.28)
+    );
+}
+
+.ligament-svg.lcl {
+  stroke: #c6a15b;
+
+  stroke-width: 9;
+
+  opacity: 0.7;
+}
+
+/* =========================================
+   OA ZONES
+========================================= */
+
+.oa-zone {
+  cursor: pointer;
+
+  fill: rgba(
+    198,
+    161,
+    91,
+    0.09
+  );
+
+  stroke: rgba(
+    198,
+    161,
+    91,
+    0.2
+  );
+
+  stroke-width: 2;
+
+  transition:
+    fill 0.2s ease,
+    stroke 0.2s ease;
+}
+
+.oa-zone:hover,
+.oa-zone.active {
+  fill: rgba(
+    198,
+    161,
+    91,
+    0.22
+  );
+
+  stroke: #c6a15b;
+}
+
+/* =========================================
+   FLUID
+========================================= */
+
+.fluid-zone {
+  fill: rgba(
+    42,
+    157,
+    127,
+    0.05
+  );
+
+  stroke: rgba(
+    42,
+    157,
+    127,
+    0.18
+  );
+
+  stroke-width: 2;
+
+  cursor: pointer;
+
+  transition:
+    fill 0.2s ease,
+    stroke 0.2s ease;
+}
+
+.fluid-zone:hover,
+.fluid-zone.active {
+  fill: rgba(
+    42,
+    157,
+    127,
+    0.15
+  );
+
+  stroke: #2a9d7f;
+}
+
+/* =========================================
+   SYNOVIUM
+========================================= */
+
+.synovial-zone {
+  fill: none;
+
+  stroke: rgba(
+    42,
+    157,
+    127,
+    0.38
+  );
+
+  stroke-width: 7;
+
+  stroke-linecap: round;
+
+  cursor: pointer;
+
+  transition:
+    stroke 0.2s ease,
+    filter 0.2s ease;
+}
+
+.synovial-zone:hover,
+.synovial-zone.active {
+  stroke: #2a9d7f;
+
+  filter:
+    drop-shadow(
+      0 0 6px
+      rgba(42, 157, 127, 0.25)
+    );
+}
+
+/* =========================================
+   CONTUSION
+========================================= */
+
+.contusion-zone {
+  fill: rgba(
+    23,
+    105,
+    170,
+    0.08
+  );
+
+  stroke: rgba(
+    23,
+    105,
+    170,
+    0.2
+  );
+
+  stroke-width: 2;
+
+  cursor: pointer;
+
+  transition:
+    fill 0.2s ease,
+    stroke 0.2s ease;
+}
+
+.contusion-zone:hover,
+.contusion-zone.active {
+  fill: rgba(
+    23,
+    105,
+    170,
+    0.2
+  );
+
+  stroke: #1769aa;
+}
+
+/* =========================================
+   FRACTURE
+========================================= */
+
+.fracture-zone {
+  fill: rgba(
+    190,
+    104,
+    92,
+    0.1
+  );
+
+  stroke: rgba(
+    190,
+    104,
+    92,
+    0.2
+  );
+
+  stroke-width: 2;
+
+  cursor: pointer;
+
+  transition:
+    fill 0.2s ease,
+    stroke 0.2s ease;
+}
+
+.fracture-zone:hover,
+.fracture-zone.active {
+  fill: rgba(
+    190,
+    104,
+    92,
+    0.22
+  );
+
+  stroke: #bd685c;
+}
+
+/* =========================================
+   BAKER'S
+========================================= */
+
+.bakers-zone {
+  fill: rgba(
+    198,
+    161,
+    91,
+    0.09
+  );
+
+  stroke: rgba(
+    198,
+    161,
+    91,
+    0.25
+  );
+
+  stroke-width: 2;
+
+  cursor: pointer;
+
+  transition:
+    fill 0.2s ease,
+    stroke 0.2s ease,
+    filter 0.2s ease;
+}
+
+.bakers-zone:hover,
+.bakers-zone.active {
+  fill: rgba(
+    198,
+    161,
+    91,
+    0.24
+  );
+
+  stroke: #c6a15b;
+
+  filter:
+    drop-shadow(
+      0 0 6px
+      rgba(198, 161, 91, 0.24)
+    );
+}
+
+/* =========================================
+   HOTSPOT LABELS
+========================================= */
+
+.anatomy-hotspot {
+  position: absolute;
+
+  padding: 7px 10px;
+
+  border: 1px solid #d8e5e9;
+
+  border-radius: 7px;
+
+  background: rgba(
+    255,
+    255,
+    255,
+    0.94
+  );
+
+  box-shadow:
+    0 5px 18px
+    rgba(28, 67, 84, 0.08);
+
+  color: #52707c;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.7px;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.anatomy-hotspot:hover,
+.anatomy-hotspot.active {
+  transform: translateY(-1px);
+
+  background: #edf7fa;
+
+  border-color: #a9cbd5;
+
+  color: #1769aa;
+}
+
+.hotspot-acl {
+  top: 230px;
+  left: 16%;
+}
+
+.hotspot-mcl {
+  top: 180px;
+  left: 12%;
+}
+
+.hotspot-medial {
+  top: 330px;
+  left: 10%;
+}
+
+.hotspot-lateral {
+  top: 330px;
+  right: 9%;
+}
+
+.hotspot-pf {
+  top: 155px;
+  right: 11%;
+}
+
+.hotspot-bakers {
+  bottom: 115px;
+  right: 8%;
+}
+
+/* =========================================
+   INSTRUCTION
+========================================= */
+
+.anatomy-instruction {
+  position: absolute;
+
+  bottom: 18px;
+  left: 50%;
+
+  transform:
+    translateX(-50%);
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 7px 10px;
+
+  border-radius: 100px;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.88
+    );
+
+  color: #81929a;
+
+  font-size: 8px;
+
+  white-space: nowrap;
+
+  border: 1px solid #e0eaed;
+}
+
+.anatomy-instruction svg {
+  color: #1769aa;
+}
+
+/* =========================================
+   DETAIL IMPROVEMENTS
+========================================= */
+
+.selected-short {
+  margin-top: 7px;
+
+  font-size: 11px;
+
+  color: #8b9ba2;
+}
+
+.selected-action {
+  margin-top: 28px;
+
+  padding: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  border: 1px solid #deeaed;
+
+  border-radius: 9px;
+
+  background: #f8fbfc;
+}
+
+.selected-action-icon {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: #edf6fa;
+
+  color: #1769aa;
+}
+
+.selected-action > div:last-child {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.selected-action span {
+  font-size: 7px;
+
+  letter-spacing: 1.2px;
+
+  font-weight: 700;
+
+  color: #a0afb5;
+}
+
+.selected-action strong {
+  font-size: 11px;
+
+  font-weight: 600;
+
+  color: #4d6a77;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 620px) {
+
+  .interactive-knee {
+    min-height: 500px;
+  }
+
+  .knee-svg {
+    width: 340px;
+    height: 470px;
+
+    top: 0;
+  }
+
+  .hotspot-acl {
+    top: 190px;
+    left: 7%;
+  }
+
+  .hotspot-mcl {
+    top: 145px;
+    left: 5%;
+  }
+
+  .hotspot-medial {
+    top: 275px;
+    left: 5%;
+  }
+
+  .hotspot-lateral {
+    top: 275px;
+    right: 4%;
+  }
+
+  .hotspot-pf {
+    top: 120px;
+    right: 5%;
+  }
+
+  .hotspot-bakers {
+    bottom: 80px;
+    right: 5%;
+  }
+
+  .anatomy-instruction {
+    font-size: 7px;
+  }
+
+}

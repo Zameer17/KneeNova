@@ -1,0 +1,10 @@
+@import "./styles/global.css";
+@import "./styles/login.css";
+@import "./styles/home.css";
+@import "./styles/system.css";
+@import "./styles/about.css";
+@import "./styles/upload.css";
+@import "./styles/viewer.css";
+@import "./styles/results.css";
+@import "./styles/reports.css";
+@import "./styles/kneeGuide.css";

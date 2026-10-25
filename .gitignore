@@ -1,0 +1,47 @@
+# Dependencies
+node_modules
+dist
+dist-ssr
+build
+.venv
+venv
+env
+backend/.venv
+backend/venv
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache
+
+# Environment & local files
+.env
+.env.local
+.env.*.local
+*.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Notebook checkpoints
+.ipynb_checkpoints
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

@@ -1,0 +1,368 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    Inter,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  background: #ffffff;
+  color: #183042;
+
+  overflow-x: hidden;
+}
+
+/* =========================================
+   KNEENOVA COLORS
+========================================= */
+
+:root {
+  --blue: #1769aa;
+  --blue-dark: #123b59;
+  --green: #2a9d7f;
+  --gold: #c6a15b;
+  --text: #183042;
+  --muted: #71818d;
+  --background: #f7fbfd;
+}
+
+/* =========================================
+   LOGO SPLASH
+========================================= */
+
+.logo-splash {
+  position: fixed;
+  inset: 0;
+
+  z-index: 9999;
+
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  background:
+    radial-gradient(
+      circle at center,
+      #ffffff 0%,
+      #fbfdfe 55%,
+      #eef8fb 100%
+    );
+
+  overflow: hidden;
+}
+
+/* subtle medical glow */
+
+.logo-splash::before {
+  content: "";
+
+  position: absolute;
+
+  width: 650px;
+  height: 650px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(23, 105, 170, 0.07),
+      transparent 68%
+    );
+
+  pointer-events: none;
+}
+
+/* subtle clinical background */
+
+.logo-splash::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(23, 105, 170, 0.018) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(23, 105, 170, 0.018) 1px,
+      transparent 1px
+    );
+
+  background-size: 55px 55px;
+
+  mask-image:
+    radial-gradient(
+      circle at center,
+      black,
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+/* =========================================
+   CENTER LOGO AREA
+========================================= */
+
+.splash-content {
+  position: relative;
+
+  width: 390px;
+  height: 390px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  z-index: 2;
+}
+
+/* =========================================
+   RINGS
+========================================= */
+
+.logo-ring {
+  position: absolute;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.ring-blue {
+  width: 360px;
+  height: 360px;
+
+  border: 1.5px solid rgba(23, 105, 170, 0.5);
+
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.ring-green {
+  width: 318px;
+  height: 318px;
+
+  border: 1.5px solid rgba(42, 157, 127, 0.45);
+
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+
+/* =========================================
+   LOGO
+========================================= */
+
+.splash-logo {
+  position: relative;
+
+  z-index: 5;
+
+  width: 255px;
+  height: 255px;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+/* =========================================
+   BRAND TEXT
+========================================= */
+
+.splash-title {
+  position: relative;
+
+  z-index: 3;
+
+  margin-top: -8px;
+
+  font-size: 42px;
+
+  line-height: 1;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  color: var(--blue-dark);
+}
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.splash-divider {
+  position: relative;
+
+  z-index: 3;
+
+  margin-top: 15px;
+
+  height: 8px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+}
+
+.splash-divider span {
+  width: 55px;
+  height: 1px;
+
+  background: #d4e1e7;
+}
+
+.splash-divider b {
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: var(--gold);
+}
+
+/* =========================================
+   TAGLINE
+========================================= */
+
+.splash-tagline {
+  position: relative;
+
+  z-index: 3;
+
+  margin-top: 10px;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 3.5px;
+
+  color: var(--blue);
+
+  white-space: nowrap;
+}
+
+/* =========================================
+   STATUS
+========================================= */
+
+.splash-status {
+  position: relative;
+
+  z-index: 3;
+
+  margin-top: 27px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  font-size: 12px;
+
+  color: var(--muted);
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: var(--green);
+
+  box-shadow:
+    0 0 0 4px rgba(42, 157, 127, 0.08);
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .splash-content {
+    width: 310px;
+    height: 310px;
+  }
+
+  .ring-blue {
+    width: 285px;
+    height: 285px;
+  }
+
+  .ring-green {
+    width: 250px;
+    height: 250px;
+  }
+
+  .splash-logo {
+    width: 205px;
+    height: 205px;
+  }
+
+  .splash-title {
+    font-size: 32px;
+  }
+
+  .splash-tagline {
+    font-size: 8px;
+    letter-spacing: 2px;
+  }
+}
+.login-test {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f7fbfd;
+
+  color: #1769aa;
+
+  font-size: 42px;
+  font-weight: 600;
+}
