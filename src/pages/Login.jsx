@@ -10,18 +10,8 @@ import {
   AlertCircle,
   Loader2,
   Sparkles,
-  Server,
-  Settings,
-  Check,
-  HelpCircle,
 } from "lucide-react";
-import {
-  loginUser,
-  createDemoUserSession,
-  getApiBase,
-  setCustomApiBase,
-  isMixedContentRisk,
-} from "../services/api";
+import { loginUser, createDemoUserSession } from "../services/api";
 
 export default function Login({ onLogin, onNavigateSignup }) {
   const [showPassword, setShowPassword] = useState(false);
@@ -32,18 +22,13 @@ export default function Login({ onLogin, onNavigateSignup }) {
   const [statusMessage, setStatusMessage] = useState("");
   const [error, setError] = useState("");
 
-  // Backend settings modal/drawer
-  const [showSettings, setShowSettings] = useState(false);
-  const [apiUrl, setApiUrl] = useState(() => getApiBase());
-  const [urlSaved, setUrlSaved] = useState(false);
-
-  // Timer for long server cold-starts (Render free-tier)
+  // Timer for server spin-up notifications
   useEffect(() => {
     let timer;
     if (loading) {
       timer = setTimeout(() => {
         setStatusMessage(
-          "Waking up cloud server... (Render free instances take ~45s to spin up on cold start)"
+          "Connecting to secure server... (Cloud instances may take up to 45s to wake up on first visit)"
         );
       }, 2500);
     } else {
@@ -89,15 +74,6 @@ export default function Login({ onLogin, onNavigateSignup }) {
       onLogin(session.user);
     }
   };
-
-  const handleSaveApiUrl = (e) => {
-    e.preventDefault();
-    setCustomApiBase(apiUrl);
-    setUrlSaved(true);
-    setTimeout(() => setUrlSaved(false), 2000);
-  };
-
-  const hasMixedContent = isMixedContentRisk();
 
   return (
     <main className="login-page">
@@ -178,135 +154,6 @@ export default function Login({ onLogin, onNavigateSignup }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
         >
-          {/* Top connection pill & settings button */}
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-              marginBottom: "16px",
-            }}
-          >
-            <div
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "6px",
-                padding: "4px 10px",
-                background: "#f1f5f9",
-                borderRadius: "20px",
-                fontSize: "11px",
-                color: "#475569",
-                maxWidth: "240px",
-                overflow: "hidden",
-                textOverflow: "ellipsis",
-                whiteSpace: "nowrap",
-              }}
-              title={`API Base: ${getApiBase()}`}
-            >
-              <Server size={12} color="#0284c7" />
-              <span>API: {getApiBase().replace(/^https?:\/\//, "")}</span>
-            </div>
-
-            <button
-              type="button"
-              onClick={() => setShowSettings(!showSettings)}
-              style={{
-                background: "transparent",
-                border: "none",
-                color: "#64748b",
-                cursor: "pointer",
-                padding: "4px",
-                display: "flex",
-                alignItems: "center",
-                gap: "4px",
-                fontSize: "11px",
-              }}
-              title="Configure API Server URL"
-            >
-              <Settings size={14} />
-              <span>Config</span>
-            </button>
-          </div>
-
-          {/* Collapsible API Configuration */}
-          {showSettings && (
-            <div
-              style={{
-                padding: "12px 14px",
-                background: "#f8fafc",
-                border: "1px solid #e2e8f0",
-                borderRadius: "8px",
-                marginBottom: "16px",
-                fontSize: "12px",
-              }}
-            >
-              <div style={{ fontWeight: "600", marginBottom: "6px", color: "#1e293b" }}>
-                Backend Server URL
-              </div>
-              <div style={{ display: "flex", gap: "6px" }}>
-                <input
-                  type="text"
-                  value={apiUrl}
-                  onChange={(e) => setApiUrl(e.target.value)}
-                  placeholder="https://kneenova-backend.onrender.com"
-                  style={{
-                    flex: 1,
-                    padding: "6px 8px",
-                    border: "1px solid #cbd5e1",
-                    borderRadius: "6px",
-                    fontSize: "12px",
-                    outline: "none",
-                  }}
-                />
-                <button
-                  type="button"
-                  onClick={handleSaveApiUrl}
-                  style={{
-                    padding: "6px 12px",
-                    background: "#0284c7",
-                    color: "#fff",
-                    border: "none",
-                    borderRadius: "6px",
-                    cursor: "pointer",
-                    fontWeight: "600",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "4px",
-                  }}
-                >
-                  {urlSaved ? <Check size={14} /> : "Save"}
-                </button>
-              </div>
-              <small style={{ display: "block", marginTop: "6px", color: "#64748b" }}>
-                On Netlify HTTPS, use a secure backend (`https://...`). Local `http://` will be blocked by browsers.
-              </small>
-            </div>
-          )}
-
-          {/* Mixed Content Warning Banner */}
-          {hasMixedContent && (
-            <div
-              style={{
-                padding: "10px 12px",
-                background: "#fffbeb",
-                border: "1px solid #fde68a",
-                borderRadius: "8px",
-                color: "#92400e",
-                fontSize: "12px",
-                lineHeight: "1.4",
-                marginBottom: "16px",
-                display: "flex",
-                gap: "8px",
-              }}
-            >
-              <AlertCircle size={16} style={{ flexShrink: 0, marginTop: "2px" }} />
-              <div>
-                <strong>HTTPS Warning:</strong> You are viewing KneeNova over HTTPS, but the API URL is set to insecure HTTP ({getApiBase()}). Browsers block mixed HTTP requests. Please use <strong>Instant Demo Mode</strong> or connect your live HTTPS Render backend in settings above.
-              </div>
-            </div>
-          )}
-
           <div className="login-heading">
             <div className="heading-badge">
               <ShieldCheck size={16} />
@@ -373,7 +220,7 @@ export default function Login({ onLogin, onNavigateSignup }) {
                 }}
               >
                 <span style={{ fontSize: "11px", color: "#7f1d1d" }}>
-                  Backend asleep or unreachable?
+                  Server unavailable or taking too long?
                 </span>
                 <button
                   type="button"
@@ -395,7 +242,7 @@ export default function Login({ onLogin, onNavigateSignup }) {
             </div>
           )}
 
-          {/* Active Status Notice for Server Cold-Start */}
+          {/* Active Status Notice for Server Wait */}
           {statusMessage && (
             <div
               style={{
