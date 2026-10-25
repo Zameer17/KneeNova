@@ -1,42 +1,52 @@
 <div align="center">
 
-<!-- 🏥 ANIMATED HEADER -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:091428,25:1769aa,50:0284c7,75:14b8a6,100:10b981&height=220&section=header&text=🏥%20KneeNova%20Medical%20AI&fontSize=38&fontColor=ffffff&fontAlignY=38&desc=AI-Powered%20Knee%20MRI%20Abnormality%20Detection%20%26%20Interactive%20DICOM%20Workspace&descAlignY=58&descSize=15&animation=fadeIn" />
+<!-- 🏥 ANIMATED HEADER BANNER (CLICKABLE) -->
+<a href="https://github.com/Zameer17/KneeNova">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:091428,25:1769aa,50:0284c7,75:14b8a6,100:10b981&height=220&section=header&text=KneeNova%20Medical%20AI&fontSize=38&fontColor=ffffff&fontAlignY=38&desc=AI-Powered%20Knee%20MRI%20Abnormality%20Detection%20%26%20Interactive%20DICOM%20Workspace&descAlignY=58&descSize=15&animation=fadeIn" width="100%" alt="KneeNova Header" />
+</a>
 
 <br/>
 
-<!-- TYPING ANIMATION -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=14B8A6&center=true&vCenter=true&width=780&lines=🏥+Automated+Knee+MRI+Abnormality+Detection;⚡+12+Pathology+Multi-Label+Deep+Learning+Inference;🔬+Interactive+Web-Based+DICOM+Volume+Visualizer;📑+Instant+Structured+Diagnostic+Clinical+Reports;🛡️+Secure+Practitioner+Workspace+%7C+Netlify+%2B+Render+Ready!)](https://git.io/typing-svg)
+<!-- ⚡ INTERACTIVE TYPING ANIMATION -->
+<a href="https://github.com/Zameer17/KneeNova">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=14B8A6&center=true&vCenter=true&width=780&lines=Automated+Knee+MRI+Abnormality+Detection;12+Pathology+Multi-Label+Deep+Learning+Inference;Interactive+Web-Based+DICOM+Volume+Visualizer;Instant+Structured+Diagnostic+Clinical+Reports;Production-Ready+Medical+AI+Workspace" alt="Typing SVG Animation" />
+</a>
 
 <br/>
 
 <!-- BADGES -->
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![React 19](https://img.shields.io/badge/React%2019-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Python](https://img.shields.io/badge/Python%203.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![DICOM](https://img.shields.io/badge/DICOM-Medical%20Imaging-0284c7?style=for-the-badge&logo=hospital&logoColor=white)
-![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
-![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)
+<p align="center">
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/React%2019-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React 19" />
+  <img src="https://img.shields.io/badge/Vite%208-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Python%203.11+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/DICOM-Imaging-0284c7?style=for-the-badge&logoColor=white" alt="DICOM" />
+  <img src="https://img.shields.io/badge/Netlify-Ready-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Netlify" />
+  <img src="https://img.shields.io/badge/Render-Ready-46E3B7?style=for-the-badge&logo=render&logoColor=black" alt="Render" />
+</p>
 
-<br/>
-
-![Status](https://img.shields.io/badge/Status-Live%20%26%20Production%20Ready-10b981?style=flat-square)
-![Type](https://img.shields.io/badge/Type-Clinical%20AI%20Platform-0284c7?style=flat-square&labelColor=091428)
-![Model](https://img.shields.io/badge/Model-EfficientNet--B0%20(timm)-14b8a6?style=flat-square&labelColor=091428)
-[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github)](https://github.com/Zameer17/KneeNova)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Zameer%20Shaikh-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/zameer-shaikh-1a9482345)
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Production%20Ready-10b981?style=flat-square" alt="Status" />
+  <img src="https://img.shields.io/badge/Type-Clinical%20AI%20Platform-0284c7?style=flat-square&labelColor=091428" alt="Type" />
+  <img src="https://img.shields.io/badge/Architecture-EfficientNet--B0%20(timm)-14b8a6?style=flat-square&labelColor=091428" alt="Architecture" />
+  <a href="https://github.com/Zameer17/KneeNova">
+    <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github" alt="GitHub" />
+  </a>
+  <a href="https://www.linkedin.com/in/zameer-shaikh-1a9482345">
+    <img src="https://img.shields.io/badge/LinkedIn-Zameer%20Shaikh-0077B5?style=flat-square&logo=linkedin" alt="LinkedIn" />
+  </a>
+</p>
 
 </div>
 
 ---
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" />
 
 ## 🏥 What is KneeNova?
 
-> **KneeNova** is an end-to-end, medical-grade diagnostic workspace designed for radiologists, orthopedic surgeons, sports clinicians, and medical researchers. It pairs a **high-performance web-based DICOM volume viewer** with a **specialized multi-slice PyTorch deep learning model** (`EfficientNet-B0`), detecting and scoring **12 distinct knee joint pathologies** simultaneously from raw MRI series.
+> **KneeNova** is an end-to-end, clinical-grade diagnostic workspace designed for orthopedic surgeons, radiologists, sports clinicians, and medical researchers. It pairs a **high-performance web-based DICOM volume viewer** with a **specialized multi-slice PyTorch deep learning model** (`EfficientNet-B0`), detecting and scoring **12 distinct knee joint pathologies** simultaneously from raw MRI series.
 
 ```python
 # KneeNova End-to-End Diagnostic Pipeline
@@ -49,7 +59,7 @@ raw_dicom_zip
   → 📑 structured_report      # Printable & exportable clinical consultation summary ✅
 ```
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" />
 
 ---
 
@@ -76,7 +86,7 @@ KneeNova classifies abnormalities across five critical knee joint compartments:
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" />
 
 ---
 
@@ -90,11 +100,11 @@ KneeNova classifies abnormalities across five critical knee joint compartments:
 | **🧠 Deep Learning Engine** | Multi-slice 3D spatial pooling on `EfficientNet-B0`, outputting calibrated percentage confidence scores. |
 | **🔐 Secure Practitioner Portal** | PBKDF2-SHA256 password hashing, SQLite session management, role selection, and instant 1-click Demo Mode. |
 | **📑 Comprehensive Reports** | Exportable diagnostic summaries formatted for orthopedic consultation, patient referral, and EHR archives. |
-| **☁️ Production-Grade Cloud** | Netlify SPA frontend configuration (`netlify.toml`) + Render Python API container specification (`render.yaml`). |
+| **⚡ Fast Multi-Label Inference** | Parallel volumetric processing analyzing an entire 8-slice series in under 2 seconds. |
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" />
 
 ---
 
@@ -116,73 +126,36 @@ KneeNova/
 │     └── 📁 styles/                   ← Responsive medical UI themes & styling
 │
 ├── 📁 public/                         ← Static assets, icons, logos & _redirects
-├── 📄 netlify.toml                    ← Netlify SPA build configuration
-├── 📄 render.yaml                     ← Render Web Service blueprint configuration
 ├── 📄 package.json                    ← Frontend dependencies & scripts
 └── 📄 README.md                       ← Interactive Project Documentation
 ```
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" />
 
 ---
 
 ## 🛠️ Technology Stack
 
 <p align="center">
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
-  <img src="https://img.shields.io/badge/React%2019-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Vite%208-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
-  <img src="https://img.shields.io/badge/Timm-EfficientNet-0284c7?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/OpenCV-Headless-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
-  <img src="https://img.shields.io/badge/Pydicom-Medical%20IO-14b8a6?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQLite-Local%20DB-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
-  <img src="https://img.shields.io/badge/Framer%20Motion-Animations-0055FF?style=for-the-badge&logo=framer&logoColor=white" />
-  <img src="https://img.shields.io/badge/Lucide%20Icons-Medical%20UI-F56565?style=for-the-badge&logo=lucide&logoColor=white" />
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/React%2019-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React 19" />
+  <img src="https://img.shields.io/badge/Vite%208-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Timm-EfficientNet-0284c7?style=for-the-badge&logo=python&logoColor=white" alt="Timm" />
+  <img src="https://img.shields.io/badge/OpenCV-Headless-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
+  <img src="https://img.shields.io/badge/Pydicom-Medical%20IO-14b8a6?style=for-the-badge&logo=python&logoColor=white" alt="Pydicom" />
+  <img src="https://img.shields.io/badge/SQLite-Local%20DB-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
+  <img src="https://img.shields.io/badge/Framer%20Motion-Animations-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" />
+  <img src="https://img.shields.io/badge/Lucide%20Icons-Medical%20UI-F56565?style=for-the-badge&logo=lucide&logoColor=white" alt="Lucide" />
 </p>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" />
 
 ---
 
-## 🚀 Live Deployment Guide
+## 💻 Local Setup & Execution
 
-KneeNova is engineered for zero-config multi-cloud deployment:
-
-### 1️⃣ Deploy Backend on [Render](https://render.com)
-1. In the **Render Dashboard**, select **New +** → **Web Service**.
-2. Connect `https://github.com/Zameer17/KneeNova.git`.
-3. Configure the service:
-   - **Root Directory**: `backend`
-   - **Runtime**: `Python 3`
-   - **Build Command**:
-     ```bash
-     pip install --no-cache-dir torch torchvision --index-url https://download.pytorch.org/whl/cpu && pip install --no-cache-dir -r requirements.txt
-     ```
-   - **Start Command**:
-     ```bash
-     uvicorn app:app --host 0.0.0.0 --port $PORT
-     ```
-4. Add Environment Variable: `PYTHON_VERSION` = `3.11.9`.
-5. Copy your live backend URL (e.g. `https://kneenova-backend.onrender.com`).
-
----
-
-### 2️⃣ Deploy Frontend on [Netlify](https://netlify.com)
-1. In **Netlify**, click **Add new site** → **Import an existing project** → Pick `KneeNova`.
-2. Netlify auto-reads `netlify.toml` (Build: `npm run build`, Publish: `dist`).
-3. Add Environment Variable:
-   - **Key**: `VITE_API_BASE_URL`
-   - **Value**: `https://your-backend-name.onrender.com` *(from Render step above)*
-4. Click **Deploy KneeNova** — your medical portal is live with free SSL & global CDN!
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
----
-
-## 💻 Local Setup & Development
-
-### 1. Backend (FastAPI API)
+### 1. Backend (FastAPI + PyTorch)
 ```powershell
 cd backend
 python -m venv .venv
@@ -190,7 +163,7 @@ python -m venv .venv
 pip install -r requirements.txt
 uvicorn app:app --host 127.0.0.1 --port 8000 --reload
 ```
-* **API Documentation**: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+* **Interactive API Docs**: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 ### 2. Frontend (React 19 + Vite)
 ```powershell
@@ -210,10 +183,13 @@ npm run dev
 
 <br/>
 
-> *"Precision medicine begins where human expertise meets computational intelligence."* 🔬⚡
+> *"Precision medicine begins where human clinical insight meets computational intelligence."* 🔬⚡
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:10b981,25:14b8a6,50:0284c7,75:1769aa,100:091428&height=120&section=footer&animation=fadeIn" />
+<!-- 🌊 ANIMATED FOOTER BANNER -->
+<a href="https://github.com/Zameer17/KneeNova">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:10b981,25:14b8a6,50:0284c7,75:1769aa,100:091428&height=120&section=footer&animation=fadeIn" width="100%" alt="KneeNova Footer" />
+</a>
 
 </div>
