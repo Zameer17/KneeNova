@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import {
   User,
@@ -14,7 +14,7 @@ import {
   Loader2,
   CheckCircle2,
 } from "lucide-react";
-import { registerUser } from "../services/api";
+import { registerUser, createDemoUserSession } from "../services/api";
 
 export default function Signup({ onSignupSuccess, onNavigateLogin }) {
   const [name, setName] = useState("");
@@ -25,7 +25,22 @@ export default function Signup({ onSignupSuccess, onNavigateLogin }) {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [statusMessage, setStatusMessage] = useState("");
   const [error, setError] = useState("");
+
+  useEffect(() => {
+    let timer;
+    if (loading) {
+      timer = setTimeout(() => {
+        setStatusMessage(
+          "Contacting cloud server... (Render free instances take ~45s to wake up on first visit)"
+        );
+      }, 2500);
+    } else {
+      setStatusMessage("");
+    }
+    return () => clearTimeout(timer);
+  }, [loading]);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -68,6 +83,15 @@ export default function Signup({ onSignupSuccess, onNavigateLogin }) {
       setError(err.message || "Failed to create account. Please try again.");
     } finally {
       setLoading(false);
+    }
+  };
+
+  const handleFallbackDemo = () => {
+    const session = createDemoUserSession(email.trim(), name.trim());
+    session.user.role = role;
+    session.user.institution = institution.trim() || "KneeNova Medical AI Lab";
+    if (onSignupSuccess) {
+      onSignupSuccess(session.user);
     }
   };
 
@@ -164,18 +188,14 @@ export default function Signup({ onSignupSuccess, onNavigateLogin }) {
             </div>
 
             <h2>Create account</h2>
-
             <p>Set up your credentials to begin analyzing MRI studies.</p>
           </div>
 
-          {/* Error Banner */}
+          {/* Error Banner with Instant Demo Fallback */}
           {error && (
             <div
               style={{
-                display: "flex",
-                alignItems: "flex-start",
-                gap: "10px",
-                padding: "10px 14px",
+                padding: "12px 14px",
                 background: "#fef2f2",
                 border: "1px solid #fecaca",
                 borderRadius: "8px",
@@ -185,8 +205,62 @@ export default function Signup({ onSignupSuccess, onNavigateLogin }) {
                 marginBottom: "18px",
               }}
             >
-              <AlertCircle size={18} style={{ flexShrink: 0, marginTop: "1px" }} />
-              <span>{error}</span>
+              <div style={{ display: "flex", gap: "8px", marginBottom: "8px" }}>
+                <AlertCircle size={18} style={{ flexShrink: 0, marginTop: "2px" }} />
+                <span>{error}</span>
+              </div>
+
+              <div
+                style={{
+                  borderTop: "1px dashed #fca5a5",
+                  paddingTop: "8px",
+                  marginTop: "8px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                }}
+              >
+                <span style={{ fontSize: "11px", color: "#7f1d1d" }}>
+                  Cloud server sleeping or unreachable?
+                </span>
+                <button
+                  type="button"
+                  onClick={handleFallbackDemo}
+                  style={{
+                    padding: "5px 10px",
+                    background: "#b91c1c",
+                    color: "#fff",
+                    border: "none",
+                    borderRadius: "6px",
+                    fontSize: "11px",
+                    fontWeight: "600",
+                    cursor: "pointer",
+                  }}
+                >
+                  Create in Demo Mode →
+                </button>
+              </div>
+            </div>
+          )}
+
+          {/* Cold-start status message */}
+          {statusMessage && (
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "8px",
+                padding: "8px 12px",
+                background: "#eff6ff",
+                border: "1px solid #bfdbfe",
+                borderRadius: "8px",
+                color: "#1d4ed8",
+                fontSize: "12px",
+                marginBottom: "16px",
+              }}
+            >
+              <Loader2 size={15} className="animate-spin" style={{ flexShrink: 0 }} />
+              <span>{statusMessage}</span>
             </div>
           )}
 
