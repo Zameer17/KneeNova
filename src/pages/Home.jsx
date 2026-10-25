@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 
 export default function Home({
+  user,
   onLogout,
   onSystem,
   onAbout,
@@ -84,13 +85,14 @@ export default function Home({
             <button
               className="profile-button"
               type="button"
+              title={user ? `${user.name} (${user.role || 'Clinician'})` : "User profile"}
             >
               <span className="profile-avatar">
-                U
+                {user?.name ? user.name.trim().charAt(0).toUpperCase() : "U"}
               </span>
 
               <span className="profile-name">
-                User
+                {user?.name || "User"}
               </span>
             </button>
 
