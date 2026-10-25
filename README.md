@@ -1,16 +1,13 @@
 <div align="center">
 
-<!-- 🏥 ANIMATED HEADER BANNER (CLICKABLE) -->
-<a href="https://github.com/Zameer17/KneeNova">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:091428,25:1769aa,50:0284c7,75:14b8a6,100:10b981&height=220&section=header&text=KneeNova%20Medical%20AI&fontSize=38&fontColor=ffffff&fontAlignY=38&desc=AI-Powered%20Knee%20MRI%20Abnormality%20Detection%20%26%20Interactive%20DICOM%20Workspace&descAlignY=58&descSize=15&animation=fadeIn" width="100%" alt="KneeNova Header" />
-</a>
+<!-- 🏥 ANIMATED HEADER BANNER -->
+<img src="https://raw.githubusercontent.com/Zameer17/KneeNova/main/public/assets/header-banner.svg" width="100%" alt="KneeNova Medical AI" />
 
 <br/>
+<br/>
 
-<!-- ⚡ INTERACTIVE TYPING ANIMATION -->
-<a href="https://github.com/Zameer17/KneeNova">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=14B8A6&center=true&vCenter=true&width=780&lines=Automated+Knee+MRI+Abnormality+Detection;12+Pathology+Multi-Label+Deep+Learning+Inference;Interactive+Web-Based+DICOM+Volume+Visualizer;Instant+Structured+Diagnostic+Clinical+Reports;Production-Ready+Medical+AI+Workspace" alt="Typing SVG Animation" />
-</a>
+<!-- ⚡ TYPING ANIMATION -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=14B8A6&center=true&vCenter=true&width=780&lines=Automated+Knee+MRI+Abnormality+Detection;12+Pathology+Multi-Label+Deep+Learning+Inference;Interactive+Web-Based+DICOM+Volume+Visualizer;Instant+Structured+Diagnostic+Clinical+Reports;Production-Ready+Medical+AI+Workspace" alt="KneeNova Platform Capabilities" />
 
 <br/>
 
@@ -134,25 +131,6 @@ KneeNova/
 
 ---
 
-## 🛠️ Technology Stack
-
-<p align="center">
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/React%2019-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React 19" />
-  <img src="https://img.shields.io/badge/Vite%208-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
-  <img src="https://img.shields.io/badge/Timm-EfficientNet-0284c7?style=for-the-badge&logo=python&logoColor=white" alt="Timm" />
-  <img src="https://img.shields.io/badge/OpenCV-Headless-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
-  <img src="https://img.shields.io/badge/Pydicom-Medical%20IO-14b8a6?style=for-the-badge&logo=python&logoColor=white" alt="Pydicom" />
-  <img src="https://img.shields.io/badge/SQLite-Local%20DB-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
-  <img src="https://img.shields.io/badge/Framer%20Motion-Animations-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" />
-  <img src="https://img.shields.io/badge/Lucide%20Icons-Medical%20UI-F56565?style=for-the-badge&logo=lucide&logoColor=white" alt="Lucide" />
-</p>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" />
-
----
-
 ## 💻 Local Setup & Execution
 
 ### 1. Backend (FastAPI + PyTorch)
@@ -189,6 +167,7 @@ npm run dev
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:10b981,25:14b8a6,50:0284c7,75:1769aa,100:091428&height=120&section=footer&animation=fadeIn" />
+<!-- 🌊 ANIMATED FOOTER BANNER -->
+<img src="https://raw.githubusercontent.com/Zameer17/KneeNova/main/public/assets/footer-banner.svg" width="100%" alt="KneeNova Footer Wave" />
 
 </div>
